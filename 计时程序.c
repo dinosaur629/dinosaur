@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<time.h>//时间函数库
+#include<time.h>//时间函数头文件
 
 int count_time() {
 	int c;
