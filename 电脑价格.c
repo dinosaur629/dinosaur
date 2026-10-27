@@ -10,6 +10,6 @@ int main()
 
 	b = a * 95.125;
 
-	printf("%d台电脑的价格为%f\n",a,b);
+	printf("%d台电脑的价格为%lf\n",a,b);
 		return 0;
 }
