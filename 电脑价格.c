@@ -3,13 +3,13 @@
 int main()
 {
 	int a = 0;
-	double b = 0;
+	double b = 0;//计算结果应为浮点数所以定义为double
 		
-	printf("���������̨���ԣ�\n");
+	printf("您想买多少台电脑：\n");
     scanf_s("%d", &a);
 
-	b = a * 95.125f;
+	b = a * 95.125;
 
-	printf("%d̨���Եļ۸�Ϊ%f\n,",a,b);
+	printf("%d台电脑的价格为%f\n",a,b);
 		return 0;
 }
