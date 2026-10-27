@@ -3,7 +3,7 @@
 int choice(void){
 	char l;
 	while (1) {
-		printf("ÇëÊäÈëÊÕÈëÀàĞÍ,Ğ¡Âó[W]¡¢Ñó´Ğ[O]¡¢Î÷ºìÊÁ[T]¡¢ºúÂÜ²·[C]£º");
+		printf("è¯·è¾“å…¥æ”¶å…¥ç±»å‹,å°éº¦[W]ã€æ´‹è‘±[O]ã€è¥¿çº¢æŸ¿[T]ã€èƒ¡èåœ[C]ï¼š");
 		scanf_s(" %c", &l, 1);
 
 		switch (l) {
@@ -19,26 +19,26 @@ int choice(void){
 		case'C':return 8;
 			break;
 
-		default:printf("ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë£¡\n");
+		default:printf("è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥ï¼\n");
 			break;
 		}
 	}
 		
-}
+}//å®šä¹‰ä¸€ä¸ªå‡½æ•°æ¥ç»™é£Ÿç‰©ä»·æ ¼èµ‹å€¼
 
 	int main(){
 	int money = 0;
 	int kg = 0;
 	
 	while (money < 1000) {
-		int price = choice();
-		printf("ÇëÊäÈëÄúÊÛ³öµÄ¹«½ïÊı");
+		int price = choice();//è°ƒç”¨å‡½æ•°
+		printf("è¯·è¾“å…¥æ‚¨å”®å‡ºçš„å…¬æ–¤æ•°");
 		scanf_s("%d", &kg);
 
 		int x = price * kg;
 		money += x;
 	}
 	
-	printf("ÄúÒÑ»ñµÃ%d½ğ±Ò£¬¿ÉÒÔĞİÏ¢Ò»ÏÂÁË¡£",money);
+	printf("æ‚¨å·²è·å¾—%dé‡‘å¸ï¼Œå¯ä»¥ä¼‘æ¯ä¸€ä¸‹äº†ã€‚",money);
 	return 0;
 }
