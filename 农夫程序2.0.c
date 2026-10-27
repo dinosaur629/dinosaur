@@ -7,17 +7,17 @@ int main() {
 	int w_price = 5;
 	int o_price = 10;
 	int t_price = 7;
-	int c_price = 8;
+	int c_price = 8;//å®šä¹‰åˆå§‹ä»·æ ¼
 	char l = 0;
 	char choice = 0;
 
 	while (money < 1000) {
-		printf("Ñ¡Ôñ²Ëµ¥£ºĞŞ¸Ä¼Û¸ñ[M]¡¢³öÊÛ[S]\n");
+		printf("é€‰æ‹©èœå•ï¼šä¿®æ”¹ä»·æ ¼[M]ã€å‡ºå”®[S]\n");
 		scanf_s(" %c", &choice);
 
 		if (choice == 'M') {
 			int n_price;
-			printf("ÇëÊäÈëÊÕÈëÀàĞÍ,Ğ¡Âó[W]¡¢Ñó´Ğ[O]¡¢Î÷ºìÊÁ[T]¡¢ºúÂÜ²·[C]ºÍĞÂµÄ¼Û¸ñ£¨ÓÃ¿Õ¸ñ¸ô¿ª£©\n");
+			printf("è¯·è¾“å…¥æ”¶å…¥ç±»å‹,å°éº¦[W]ã€æ´‹è‘±[O]ã€è¥¿çº¢æŸ¿[T]ã€èƒ¡èåœ[C]å’Œæ–°çš„ä»·æ ¼ï¼ˆç”¨ç©ºæ ¼éš”å¼€ï¼‰\n");
 			scanf_s(" %c %d", &l, 1, &n_price);
 
 			switch (l) {
@@ -33,16 +33,16 @@ int main() {
 			case'C':c_price = n_price;
 				break;
 
-			default:printf("ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë£¡\n");
+			default:printf("è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥ï¼\n");
 				continue;
-			}
+			}//ç”¨Switchä¿æŒä»·æ ¼æŒç»­æ›´æ–°
 		}
 
 		else if (choice == 'S') {
-			printf("ÇëÊäÈëÊÕÈëÀàĞÍ,Ğ¡Âó[W]¡¢Ñó´Ğ[O]¡¢Î÷ºìÊÁ[T]¡¢ºúÂÜ²·[C]\n");
+			printf("è¯·è¾“å…¥æ”¶å…¥ç±»å‹,å°éº¦[W]ã€æ´‹è‘±[O]ã€è¥¿çº¢æŸ¿[T]ã€èƒ¡èåœ[C]\n");
 			scanf_s(" %c", &l);
 
-			printf("ÇëÊäÈëÄúÊÛ³öµÄ¹«½ïÊı\n");
+			printf("è¯·è¾“å…¥æ‚¨å”®å‡ºçš„å…¬æ–¤æ•°\n");
 			scanf_s("%d", &kg);
 
 			switch (l) {
@@ -58,7 +58,7 @@ int main() {
 			case'C':price = c_price;
 				break;
 
-			default:printf("ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë£¡\n");
+			default:printf("è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥ï¼\n");
 				continue;
 			}
 
@@ -68,6 +68,6 @@ int main() {
 		}
 	}
 
-		printf("ÄúÒÑ»ñµÃ1000½ğ±Ò£¬¿ÉÒÔĞİÏ¢Ò»ÏÂÁË¡£\n");
+		printf("æ‚¨å·²è·å¾—%dé‡‘å¸ï¼Œå¯ä»¥ä¼‘æ¯ä¸€ä¸‹äº†ã€‚\n",&money);
 		return 0;
 	}
