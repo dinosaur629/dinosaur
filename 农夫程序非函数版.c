@@ -34,6 +34,6 @@ int main() {
 		money += x;
 	}
 
-	printf("您已获得1000金币，可以休息一下了。");
+	printf("您已获得%d金币，可以休息一下了。",money);
 	return 0;
 }
