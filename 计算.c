@@ -7,7 +7,7 @@ int main()\
 	char z = 0;//z为单个字母，不能设置成int，应设置为char
 	
 	printf("您要进行加法（A）、减法（S）、乘法（W）、还是除法（D）？");
-	scanf_s("%c",&z);
+	scanf_s(" %c",&z,1);
 	printf("请分别输入两个数字");
 	scanf_s("%lf %lf",&a, &b);
     
